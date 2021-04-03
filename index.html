@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="nonèmio.css" rel="stylesheet" type="text/css">
+       <title>TravelWorld</title>
+       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   </head>
+   <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+  [...]
+</script>
+<!-- Fine script per la geolocalizzazione -->
+
+    <body>
+
+      <nav>
+          <header>
+              <h1>TravelWorld</h1>
+          </header>
+          <ul>
+              <li>
+                  <a href="cercaeprenota.html">Cerca e prenota</a>
+              </li>
+              <li>
+                <a href="bonusesconti.html">Bonus e sconti</a>
+            </li>
+            <li>
+                <a href="viaggiosolitario.html">Viaggio solitario</a>
+            </li>
+            <li>
+                <a href="Tentailviaggio.html">Tenta il viaggio</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+                <a href="contatti.html">Contatti</a>
+            </li>
+            <li>
+                <a href="chisiamo.html">Chi siamo</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+             </li>   
+          </ul>
+      </nav>
+      <div class="container">
+            <div class="section">
+
+            </div>
+            <div class="section">
+
+            </div>
+      </div>
+      <table>
+        <td>
+        <tr>
+          <ul class="slides">
+          <li>
+        <a href="#"><img src="https://www.wowtravel.it/wp-content/uploads/2018/07/upload474untitleddesign17-800x445.jpg" width="1330px" height="500px" alt="Roma" class="slides"></a>
+      </li>
+      <figcaption>Roma:</figcaption>
+      <p> I simboli di Roma, oltre allo stemma comunale, sono la lupa capitolina, statua bronzea raffigurante la leggendaria lupa che allattò i due gemelli Romolo e Remo; il Colosseo, il più grande anfiteatro del mondo romano, riconosciuto, nel 2007, come una delle sette meraviglie del mondo moderno (unica in Europa); il Cupolone, la cupola della basilica di San Pietro in Vaticano, che domina tutta la città e simboleggia il mondo cristiano. Simbolo della città durante l'antichità era l'aquila imperiale, effigie militare; durante il Medioevo era il leone, animale emblema di supremazia.</p>
+        </tr>
+        </td>
+        <td>
+        <tr>
+          <li>
+      <img src="https://www.turismo.it/typo3temp/pics/705918f466.jpg" width="1330px" height="500px" alt="Egitto" class="slides"></a>
+      </li>
+    </ul>
+      <figcaption>Egitto:</figcaption>
+      <p>Resta ancora irrisolto il mistero sull'autore della distruzione del naso della Sfinge. Contrariamente a quanto si crede, il naso della Sfinge non fu distrutto in epoca Napoleonica, ma molto prima, nel 1378, opera di un religioso islamico, Sa'im al-Dahr, il quale subito dopo il fatto è stato linciato per atti di vandalismo. La credenza vuole che siano stati i soldati di Napoleone i colpevoli di tale atto vandalico. Ma esistono alcune immagini di Frederick Lewis Norden risalenti al 1737, che già mostrano la Sfinge priva del naso.</p>
+       </tr>
+       </td> 
+      </table>
+      <!-- integrare un video youtube -->
+      <iframe width="750" height="318" src="https://www.youtube.com/embed/wXJrDxgCcl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </body>
+      <footer>
+      <dl>
+      <dt>Creato da:</dt>
+      <dd><address><a href="mailto:serenalonardo13@gmail.com">Serena Lo Nardo</a></address></dd>
+      <dd><address><a href="mailto:carlocammarata@gmail.com">Carlo Cammarata</a></address></dd>
+      <dd><address><a href="mailto:evelinamangione@gmail.com">Evelina Mangione</a></address></dd>
+        <small>© Serena Lo Nardo, Carlo Cammarata, Evelina Mangione.</small>
+      </dl>
+      </footer> 
+</html>
