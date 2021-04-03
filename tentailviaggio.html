@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <head>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="terzocss.css" rel="stylesheet" type="text/css">
+       <title>travelworld</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </head>
+    <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+  [...]
+</script>
+<!-- Fine script per la geolocalizzazione -->
+<body>
+<div id="tuodiv"></div>
+	<nav>
+	 <header>
+	<h1>Tenta il viaggio</h1>
+	 </header>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+    <p>Seleziona il numero di giorni e il numero di persone,</p>
+    </div>
+    <div class="progress">
+      <p>One step</p>
+    <div class="progress-bar">
+      <div class="bar-pink">
+        <p>45%</p>
+      </div>
+     </div>
+    </div>
+    <div class ="categories">
+      <button class="flights button">Voli</button>
+      <button class="Hotels button">Hotels</button>
+      <button class ="Packages button">Pacchetti</button>
+    </div>
+   <div class="row1">
+    <div class="locations from-location1">
+     <label class="from-location2" for="from">Da:</label>
+      <select class="from">
+        <option value="England">Australia</option>
+        <option value="England">Asgard</option>
+        <option value="England">Brazil</option>
+        <option value="England">Burma</option>
+        <option value="England">Burundi</option>
+        <option value="England">China</option>
+        <option value="England">Congo</option>
+        <option value="England">Dominican Republic</option>
+        <option value="England">England</option>
+        <option value="England">El Salvador</option>
+        <option value="England">Ethiopia</option>
+        <option value="India">India</option>
+        <option value="England">Iraq</option>
+        <option value="Italy">Italy</option>
+        <option value="England">Japan</option>
+        <option value="England">Russia</option>
+        <option value="England">Somalia</option>
+        <option value="England">Syria</option>
+        <option value="United States">United States</option>
+        <option value="England">Yemen</option>
+        <option value="Wakanda">Wakanda</option>
+      </select>
+    </div>
+    <div class="locations to-location1">
+      <label class="to-location2" for="to">A:</label>
+      <select class="to">
+       <option value="England">Australia</option>
+        <option value="England">Asgard</option>
+        <option value="England">Brazil</option>
+        <option value="England">Burma</option>
+        <option value="England">Burundi</option>
+        <option value="England">China</option>
+        <option value="England">Congo</option>
+        <option value="England">Dominican Republic</option>
+        <option value="England">England</option>
+        <option value="England">El Salvador</option>
+        <option value="England">Ethiopia</option>
+        <option value="India">India</option>
+        <option value="England">Iraq</option>
+        <option value="Italy">Italy</option>
+        <option value="England">Japan</option>
+        <option value="England">Russia</option>
+        <option value="England">Somalia</option>
+        <option value="England">Syria</option>
+        <option value="United States">United States</option>
+        <option value="England">Yemen</option>
+        <option value="Wakanda">Wakanda</option>
+      </select>
+    </div>
+  </div>
+    <div class="row2">
+      <div class="dates depart">
+        <label class="depart-date" for="depart">Partenza:</label>
+        <input class="departure-date" type="date"></input>
+      </div>
+      <div class="dates return">
+        <label class="returning-date" for="return">Ritorno:</label>
+        <input class="return-date" type="date"></input>     
+      </div>
+    </div>
+    <div class="next-button">
+    <button class="next" value="submit">Let's Fly!</button>
+      </div>
+    </form>
+  </main>
+  <p>noi scegliamo la località e il mezzo di tasporto, ti mostreremo le nostre proposte e tu potrai scegliere in base al tuo budget. Nessun vincolo, nessun obbligo di scelta ma lasciati tentare dalle nostre proposte.</p>
+</body>      
+</html>
