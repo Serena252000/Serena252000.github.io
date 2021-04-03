@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="settimocss.css" rel="stylesheet" type="text/css">
+       <title>TravelWorld</title>
+       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     </head>
+   <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+</script>
+<!-- Fine script per la geolocalizzazione -->
+    <body>
+      <div id="tuodiv"></div>
+    <nav>
+      <header>
+          <h1>TravelWorld</h1>
+          </header>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+<main class="faq">
+        
+  <div class="faq__logo__holder">
+  <div class="faq__logo">
+    <img src="https://bobmatyas.github.io/fm-faq-accordion/images/illustration-woman-online-mobile.svg" alt="woman at a computer" class="faq__logo__image hidden-lg">
+    <img src="https://bobmatyas.github.io/fm-faq-accordion/images/illustration-box-desktop.svg" alt="" class="faq__logo__image visible-lg">
+  </div>
+  </div>
+  
+  <div class="faq__holder">
+  <h1 class="faq__heading">FAQ</h1>
+ 
+  <details class="faq__detail">
+      <summary  class="faq__summary"><span class="faq__question">Come posso sapere se la mia prenotazione è stata inviata correttamente?</span></summary>
+      <p class="faq__text">Una volta inviata la prenotazione, il nostro sistema ti invierà in automatico una e-mail di conferma di avvenuta ricezione della prenotazione. Se non ricevi questa e-mail entro 10 minuti, contatta il nostro  Call Center allo 000000000.</p>
+  </details>
+
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question">Come posso pagare il mio viaggio?</span></summary>
+    <p class="faq__text">Puoi pagare il tuo viaggio con carta di credito o con bonifico bancario.</p>
+  </details>  
+
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question">Ho lasciato i miei effetti personali a bordo. Chi devo contattare?</span></summary>
+    <p class="faq__text">Contattare l'ufficio oggetti smarriti all'aeroporto di partenza e di arrivo.</p>
+    <p class="faq__text">Chiama il numero 111111111.</p>
+  </details>  
+  
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question">Come posso cambiare il mio volo?</span></summary>
+    <p class="faq__text">Puoi modificare il volo fino a 2 ore prima della partenza. Vedrai direttamente il costo della modifica. Dopo aver completato le modifiche, riceverai entro qualche minuto una nuova conferma di prenotazione.</p>
+  </details> 
+  
+  <details class="faq__detail">
+    <summary  class="faq__summary"><span class="faq__question">Come si effettua il check-in online?</span></summary>
+    <p class="faq__text">Puoi effettuare il check-in online da smartphone, tablet o computer. Puoi farlo a partire da 30 ore fino a 4 ore o 1 ora prima della partenza. Riceverai un’e-mail e potrai effettuare il check-in online cliccando sul link contenuto nell’e-mail. Puoi effettuare il check-in online anche sul sito: ti basta accedere con i dati di prenotazione. Una volta completato il check-in, puoi scaricare la carta d’imbarco sul tuo smartphone oppure stamparla.</p>
+  </details>   
+
+</div>
+</main> 
+   
+</body>
+</html>

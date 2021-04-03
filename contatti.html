@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="ottavocss.css" rel="stylesheet" type="text/css">
+       <title>TravelWorld</title>
+       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     </head>
+   <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+</script>
+<!-- Fine script per la geolocalizzazione -->
+    <body>
+      <div id="tuodiv"></div>
+  <nav>
+    <header>
+  <h1>Contatti</h1>
+   </header>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+  <main class="flexbox-col">
+
+  <div class="form-wrapper">
+    <form id="form" method="post" name="emailform" action="email.php">
+      <h3 class="form-title">Contattaci</h3>
+      <p class="form-undertitle">I campi contrassegnati da "*" sono obbligatori.</p>
+      <div class="form-input-grid">
+        <div>
+          <p class="form-text">Nome utente*</p>
+          <div class="form-input-wrapper flexbox-left">
+            <i class="uil uil-user"></i>
+            <input class="form-input" id="uname" name="uname" type="text" placeholder="Nome utente" aria-label="" required>
+          </div>
+        </div>
+        <div>
+        <p class="form-text">Password*</p>
+        <div class="form-input-wrapper flexbox-left">
+          <i class="uil uil-asterisk"></i>
+          <input class="form-input" id="pword" name="pword" type="password" placeholder="Password" aria-label="" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-input-max">
+      <p class="form-text">Email*</p>
+      <div class="form-input-wrapper flexbox-left">
+        <i class="uil uil-at"></i>
+        <input class="form-input" id="email" name="email" type="email" placeholder="Email" aria-label="" required>
+      </div>
+    </div>
+    <div class="form-input-max">
+      <p class="form-text">Testo* (Max 500)</p>
+      <div id="textarea" class="form-input-wrapper flexbox-left-start">
+        <i class="uil uil-comment-dots"></i>
+        <textarea class="form-input" id="message" name="message" placeholder="Testo" maxlength="500" aria-label="" required></textarea>
+      </div>
+     </div>
+     <div class="form-input-max flexbox-left">
+      <div class="button-wrapper">
+        <button id="form-button" type="submit" class="button btn-primary"><i class="uil uil-envelope-heart"></i>Invia<div class="btn-secondary"></div></button>
+       </div>
+     </div>
+   </form>
+  </div>
+
+</main>
+        </body>
+        </html>

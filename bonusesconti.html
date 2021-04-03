@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="quartocss.css" rel="stylesheet" type="text/css">
+       <title>travelworld</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </head>
+    <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+  [...]
+</script>
+<!-- Fine script per la geolocalizzazione -->
+<body>
+  <div id="tuodiv"></div>
+  <nav>
+   <header>
+  <h1>Bonus e Sconti</h1>
+   </header>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+    <ul>
+     <li>Sconti del 10% sui viaggi last minute per gli studenti universitari.</li>
+     <li>Sconto del 5% sui viaggi last minute per i lavoratori.</li>
+     <li>Sconto del 3% per ogni amico che porti con te e se viaggi da solo il tuo sconto è del 5%.</li>
+     <li> Ogni giorno tanti sconti su più di cento viaggi.</li> 
+     <li>Ulteriori sconti sui pacchetti di viaggi, i quali comprendono soggiorni dai tre ai cinque giorni, volo o mezzo di trasporto compreso, inoltre, incluso nel prezzo la struttura in cui risiedere durante tutta la durata del viaggio.</li>
+   </ul>
+
+   <div class="card-trip">
+  <img src="https://images.unsplash.com/photo-1542668331-3c6b8b55e472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1070&q=80">
+  <div class="card-trip-infos">
+    <div>
+      <h2>Italia </h2>
+      <p>Vieni a visitare questo posto meraviglioso!</p>
+    </div>
+    <h2 class="card-trip-pricing">A partire da €599</h2>
+    <img src='https://images.unsplash.com/photo-1502877828070-33b167ad6860?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=821&q=80' class="card-trip-user avatar-bordered"/>
+  </div>
+</div>
+<!--card category-->
+<h2>Relax</h2>
+<div class="card-category">
+  Breakfast
+ </div>
+<!--card-product-->
+<div class="card-product">
+  <img src="https://d2halst20r4hcy.cloudfront.net/de8/c4f75/182f/4d49/aec2/ff9b42b8c939/original/58724.jpg">
+  
+    <!--Product name-->
+  <div class="card-product-infos">
+    <h2>SPA</h2>
+    <p>Scopri il mondo <strong>da sola o con i tuoi amici.</strong></p>
+  </div>
+</div>
+</body>
+</html>

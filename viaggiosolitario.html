@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="sestocss.css" rel="stylesheet" type="text/css">
+       <title>travelworld</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </head>
+    <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+  [...]
+</script>
+<!-- Fine script per la geolocalizzazione -->
+<body>
+<div id="tuodiv"></div>
+	<nav>
+	 <header>
+	<h1>Viaggio Solitario</h1>
+	 </header>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+          <p>Per te che viaggi da solo uno sconto del 5% su tutti i viaggi.</p>
+          <p>Grazie alla collaborazione con WeRoad abbiamo la possibiità di offrirvi dei viaggi speciali, potete partire da soli ma incontrarvi con un gruppo di sconosciuti ed esplorare i posti insieme. <br> Potrete allontanarvi dal gruppo in qualsiasi momento, potete anche terminare il vostro viaggio in anticipo senza pagare la penale.</p>
+
+          <!-- horizontal -->
+
+<h4>Goditi la natura</h4>
+<div class="flip">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">MONTAGNA</hi>
+    </div>
+    <div class="back">
+       <h2>Consigli</h2>
+       <p>Toccara la roccia, calpesta i sassi e riposa in un luogo fresco. </p>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">LAGO</hi>
+    </div>
+    <div class="back">
+       <h2>Consigli</h2>
+       <p>Osserva i pesci nuovare e le barche muoversi, se vuoi sali anche tu su una piccola barca di legno.</p>
+    </div>
+</div>
+<div class="flip">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">OCEANO</hi>
+    </div>
+    <div class="back">
+       <h2>Consigli</h2>
+       <p>Lasciati trasportare dal rumore delle onde e siediti vicino alla riva, rilassa i tuoi muscoli.</p>
+    </div>
+</div>
+
+<br>
+<br>
+
+<!-- vertical -->
+  
+<h4>Goditi la vita</h4>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">FORESTA</hi>
+    </div>
+    <div class="back">
+       <h2>Consigli</h2>
+       <p>Stati attenti agli animali selvaggi, ammirate gli alberi e le bellissime piante che vi circondano.</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/34950/pexels-photo.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">SENTIERO</hi>
+    </div>
+    <div class="back">
+       <h2>Consigli</h2>
+       <p>Non devi per forza allontanarti da casa è necessario uscire e perdersi all'interno della propria città.</p>
+    </div>
+</div>
+<div class="flip flip-vertical">
+    <div class="front" style="background-image: url(https://images.pexels.com/photos/34546/sunset-lake-landscape-summer.jpg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
+       <h1 class="text-shadow">PALUDE</hi>
+    </div>
+    <div class="back">
+       <h2>Consigli</h2>
+       <p>Non giocate con il fango... oppure si.</p>
+    </div>
+</div>
+  
+  </body>
+  </html>

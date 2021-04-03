@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+       <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+       <link href="nonocss.css" rel="stylesheet" type="text/css">  
+       <title>TravelWorld</title>
+       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   </head>
+   <script type="text/javascript" src="assets/js/respond.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+<![endif]-->
+<!-- Flexlider -->
+<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+<!-- Flexlider -->
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: true,
+    controlNav: true,
+    directionNav: false
+  });
+});
+</script>
+<script type="text/javascript">
+var caricaFlexslider = function() {
+  $(".flexslider").load("flexslider.html");
+};
+</script>
+<!-- Fine Flexlider -->
+<!-- Formattazione menu per il mobile -->
+<script type="text/javascript">
+$(function() {
+ [...]
+});
+</script>
+<!-- Fine formattazione menu per il mobile -->
+
+<!-- Carica lo slideshow se la finestra è larga più di 768px -->
+<script type="text/javascript">
+ if (document.documentElement.clientWidth >= 768) {
+   caricaFlexslider();
+ }
+</script>
+<!-- Fine caricamento slideshow -->
+<!-- Inizializza lo script FitVids -->
+<script src="assets/js/jquery.fitvids.js"></script>
+<script>
+  $("article.post").fitVids();
+</script>
+<!-- Fine FitVids -->
+<!-- Script per la gelocalizzazione -->
+<script type="text/javascript">
+  var output = document.getElementById('luoghi');
+</script>
+<!-- Fine script per la geolocalizzazione -->
+
+    <body>
+      <div id="tuodiv"></div>
+  <nav>
+   <header> 
+ <h1>Chi siamo</h1>
+ </header>
+          <ul>
+              <li>
+                  <a href="index.html">Home</a>
+              </li>
+            </ul>
+          </nav>
+<section class="about-section">
+        <div class="container">
+            <div class="row">                
+                <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                            <span class="title">Il nostro gruppo</span>
+                            <h2>Un progetto ideato esclusivamente<br> per voi</h2>
+                        </div>
+                        <div class="text">Siamo un piccolo gruppo di amici e studenti universitari.<br> Siamo consapevoli dell'importanza di un viaggio, è un periodo di scoperta, di libertà e felicità. <br> Questo sito è ideato per giovani ragazzi che hanno voglia di scoprire il mondo, proprio come noi. <br> Potete viaggiare da soli o in compagnia e in totale sicurezza. <br> La sicurezza per noi è molto importante, a volte viaggiare da soli o allontanarsi da casa può fare paura ma noi vogliamo rassicurarvi. <br> Per ulteriori dubbi non esitate a contattarci, siamo a vostra completa disposizione.</div>
+                        <ul class="list-style-one">
+                            <li>Libertà</li>
+                            <li>Sicurezza</li>
+                            <li>Fiducia</li>
+                        </ul>
+                        <div class="btn-box">
+                            <a href="#" class="theme-btn btn-style-one">Contattaci</a>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+            </div>
+               
+            </div>
+        </div>
+    </section>        
+
+
+  
+</header>
+</nav>
+</body>
+</html>
+
+

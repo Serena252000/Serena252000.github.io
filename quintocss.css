@@ -1,0 +1,235 @@
+body {
+ background: red;
+}
+@media screen and (min-width: 480px) {
+ body {
+  background: yellow;
+ }
+}
+@media screen and (min-width: 768px) {
+ body {
+  background: green;
+ }
+}
+@media screen and (min-width: 1024px) {
+ body {
+  background: blue;
+ }
+}
+@media screen and (min-width: 1200px) {
+ body {
+  background: gray;
+ }
+}
+
+/* == Stili di base - Mobile first ===== */
+  Qui vanno gli stili per il mobile
+/* == Media queries (breakpoint) ===== */
+/* -----------------------------------
+IPAD PORTRAIT
+------------------------------------ */
+@media only screen and (min-width: 768px) {
+}
+/* -----------------------------------
+IPAD LANDSCAPE + NETBOOK
+------------------------------------ */
+@media only screen and (min-width: 1024px){
+}
+/* -----------------------------------
+DESKTOP
+------------------------------------ */
+@media only screen and (min-width: 1200px){
+}
+
+/* Nascondiamo le sezioni che non vogliamo
+visualizzare su smartphone */
+aside .ultimi-commenti-widget,
+aside#secondaria, .flexslider {
+display: none;
+}
+
+nav {
+font-size: 1.010em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background:#f5feff;
+}
+nav{
+    position: relative;
+    width: 100%;   height: 150px;
+}
+nav header{
+    width: 100%;  height: 60%;
+    background: #262626;
+}
+nav header h1{
+    text-align: center;   line-height: 90px;
+    color: #fff;
+    font-size: 40px;
+}
+nav ul{
+    width: 100%;   height: 60px;
+    background: #00bcd4;
+}
+.sticky{
+    position: fixed;
+    top: 0;   left: 0;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+}
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;  text-transform: uppercase;   
+    color: #fff;
+    box-sizing: border-box;
+    padding: 21px 20px;
+    z-index: 2;
+}
+nav ul li::before{
+    content: '';
+    position: absolute;
+    width: 100%;  height: 100%;
+    top: 100%;  left: 0;
+    background: #ff9800;
+    z-index: 1;
+    transition: .5s;
+}
+nav ul li:hover:before{
+    top: 0;
+}
+
+body {
+  background-color: rgb(228, 229, 247);
+}
+.social-login img {
+  width: 24px;
+}
+a {
+  text-decoration: none;
+}
+
+.card {
+  font-family: sans-serif;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  margin-bottom:3em;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 1.8rem;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+.subtitle {
+  text-align: center;
+  font-weight: bold;
+}
+.btn-text {
+  margin: 0;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.google-btn {
+  background: #fff;
+  border: solid 2px rgb(245 239 239);
+  border-radius: 8px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px 10px;
+  flex: auto;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.fb-btn {
+  background: #fff;
+  border: solid 2px rgb(69, 69, 185);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.or {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(245 239 239);
+  line-height: 0.1em;
+  margin: 25px 0;
+}
+.or span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.email-login {
+  display: flex;
+  flex-direction: column;
+}
+.email-login label {
+  color: rgb(170 166 166);
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 15px 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.cta-btn {
+  background-color: rgb(69, 69, 185);
+  color: white;
+  padding: 18px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.forget-pass {
+  text-align: center;
+  display: block;
+}
+
+#tuodiv {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Upper_Joffre_Lake_-_British_Columbia%2C_Canada.jpg/1200px-Upper_Joffre_Lake_-_British_Columbia%2C_Canada.jpg) no-repeat center top;
+  position: fixed; 
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
